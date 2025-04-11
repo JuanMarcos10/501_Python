@@ -86,3 +86,29 @@ print(subcadena1) # Hola
 # Obtener la subcadena de Mundo
 subcadena2 = cadena[6:11]
 print(subcadena2) # Mundo
+
+import random
+
+letras = list('abcdefghijkl')   # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l']  
+
+l1 = letras[0:5] # ['a', 'b', 'c', 'd', 'e']
+l2 = letras[5:10] # ['f', 'g', 'h', 'i', 'j']
+random.shuffle(l1) # Mezcla la lista l1
+print(l1) # ejemplo: ['d', 'b', 'e', 'c', 'a']
+
+for a, b in zip(l1, l2): # la función zip() combina dos listas en una sola
+    print(a + b, end=" ")
+
+vocales = list("aeiou") # ['a', 'e', 'i', 'o', 'u'] 
+for i in range(len(letras)):
+    if letras[i] in vocales:
+        print('{} en la posición {}'.format(letras[i], i))
+
+for i, letra in enumerate(letras): # enumerate() devuelve un objeto iterable que contiene pares de índice y valor
+    if letra in vocales:
+        print('{} en la posición {}'.format(letra, i))
+        
+abcde = sorted(letras)[:7]
+print(abcde)
+print(list(enumerate(abcde)))
+print(list(enumerate(abcde, 11)))
