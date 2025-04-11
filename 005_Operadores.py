@@ -16,10 +16,10 @@ print("Eres mayor de edad." if int(input("Ingresa tu edad: ")) >= 18 else "No er
 # FOR
 #  Imprime el contenido del diccionario
 for i in ["primavera", "verano", "otoño", "invierno"]:		
-	print(i)
+	print(i) # Imprime el contenido del diccionario
 
 for i in range(5):
-    print(f"Valor de la variable {i}")
+    print(f"Valor de la variable {i}") # Imprime el valor de la variable i de 0 a 4
 
 #   Bucle for anidado
 #   Imprime cada color para cada fruta:
@@ -27,7 +27,7 @@ frutas = ["manzana", "banana", "cereza"]
 color = ["verde", "amarilla", "roja"]
 for x in frutas:
   for y in color:
-    print(x, y)
+    print(x, y) #  Imprime cada color para cada fruta:
 
 #	WHILE
 #   Imprime edad cuando el contador llegue a 18
@@ -37,8 +37,7 @@ while edad<0:
     edad=int(input("Introduce edad: "))
 print("tu edad es: "+str(edad))
 
-#   Bucle while con un if anidado y un break
-#   Salga del bucle cuando num sea 3:
+#   Bucle while con un if anidado y un break y sale del bucle cuando num sea 3:
 num = 1
 while num < 6:
   print(num)
