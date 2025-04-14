@@ -51,7 +51,7 @@ print(numero_flotante, ":", type(numero_flotante))
 print(NUMEROPI, ":", type(NUMEROPI)) # La anotacion de tipo MAYUSCULA es una convención para indicar que es una constante.
 print(variable_string, ":", type(variable_string))
 print(is_verdadero, ":", type(is_verdadero))
-print(type(None))  
+print(None, type(None))  
 
 # Si queremos especificar el tipo de una variable, utilizamos casting:
 entero = int(23.5)              # Convierte el número 23.5 a entero, es decir, 23
